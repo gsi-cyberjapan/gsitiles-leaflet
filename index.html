@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>GSI Tiles on Leaflet</title>
-<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
-<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.2/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.0.2/dist/leaflet.js"></script>
 
 <style>
   body {padding: 0; margin: 0}
@@ -17,7 +17,7 @@
 <script>
 var map = L.map('map');
 
-L.tileLayer('http://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
+L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
   attribution: "<a href='http://maps.gsi.go.jp/development/ichiran.html' target='_blank'>地理院タイル</a>"
 }).addTo(map);
 
